@@ -43,4 +43,8 @@
     <string name="play_crunches">Play Crunches</string>
     <string name="play_squats">Play Squats</string>
     <string name="play_lunges">Play Lunges</string>
+    <string name="add_recipe_button">+ Add Recipe</string>
+    <string name="reciptes_text_view">Recipes</string>
+    <string name="recipte_entry">Recipe Entry</string>
+
 </resources>

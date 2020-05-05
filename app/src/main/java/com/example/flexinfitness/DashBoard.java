@@ -27,6 +27,7 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
     Button settingsButton;
     Button workoutPlannerButton;
     Button tutorialButton;
+    Button mainRecipeButton;
 
     TextView name;
 
@@ -46,12 +47,15 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
         settingsButton = findViewById(R.id.settingsButton);
         workoutPlannerButton = findViewById(R.id.workoutPlannerButton);
         tutorialButton = findViewById(R.id.tutorialButton);
+        mainRecipeButton = findViewById(R.id.mianRecipeButton);
+
 
         // set the onClicks
         logButton.setOnClickListener(this);
         settingsButton.setOnClickListener(this);
         workoutPlannerButton.setOnClickListener(this);
         tutorialButton.setOnClickListener(this);
+        mainRecipeButton.setOnClickListener(this);
 
         final GoogleSignInAccount signInAccount = GoogleSignIn.getLastSignedInAccount(this);
         if (signInAccount != null)
@@ -115,7 +119,7 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
         {
                 // switch to log
             case R.id.logButton:
-                Intent gotoLOGDIARYHOMEPAGE = new Intent(getApplicationContext(), log.class);
+                Intent gotoLOGDIARYHOMEPAGE = new Intent(DashBoard.this, log.class);
                 startActivity(gotoLOGDIARYHOMEPAGE);
                 break;
                 // switch to workout planner
@@ -130,8 +134,12 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
                 break;
                 // switch to settings
             case R.id.settingsButton:
-                Intent goToSettings = new Intent(getApplicationContext(), settingOptions.class);
+                Intent goToSettings = new Intent(DashBoard.this, settingOptions.class);
                 startActivity(goToSettings);
+                break;
+            case R.id.mianRecipeButton:
+                Intent recipeAdd = new Intent(DashBoard.this, AddRecipe.class);
+                startActivity(recipeAdd);
                 break;
             default:
                 break;

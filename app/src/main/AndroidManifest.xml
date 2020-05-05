@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".log_proof"></activity>
+        <activity android:name=".CreateRecipe"></activity>
+        <activity android:name=".AddRecipe" />
+        <activity android:name=".log_proof" />
         <activity android:name=".tutorial" />
         <activity
             android:name=".workoutPlanner"

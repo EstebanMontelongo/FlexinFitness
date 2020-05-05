@@ -17,7 +17,7 @@
     <string name="hint_workout_duration">" Minutos totales"</string>
     <string name="add_exercise_create_log">" Agregar ejercicio"</string>
     <string name="total_weight_create_log">" Peso total"</string>
-    <string name="add_log_home">" + Agregar registro"</string>
+    <string name="add_log_home">"+ Agregar registro"</string>
     <string name="home_homepage">HOGAR</string>
     <string name="log_history_homepage">" Historial de registro"</string>
     <string name="sign_in_main">Inicia sesión</string>
@@ -44,4 +44,8 @@
     <string name="play_crunches">Video de Crunches</string>
     <string name="play_squats">Video de Squats</string>
     <string name="play_lunges">Video de Lunges</string>
+    <string name="add_recipe_button">+ Agrega Receta</string>
+    <string name="reciptes_text_view">Recetas</string>
+    <string name="recipte_entry">Entrada de Receta</string>
+
 </resources>
